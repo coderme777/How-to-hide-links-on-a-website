@@ -52,10 +52,12 @@
 
       echo '<br>Function reuqest:';
       function s_link(string $name, string $link) {
-        return '<br><form method="post"><button class="my" onclick="window.open(\''. $link .'\');">'. $name .'</button></form>';
+          $res = '<br><form method="post"><button class="my" onclick="window.open(\''. $link .'\');">'. $name .'</button></form>';
+        return $res;
       }
 
-      echo s_link('yandex','https://ya.ru');
+      $res = s_link('Yandex','https://ya.ru');
+      echo $res;
 
     ?>
 
