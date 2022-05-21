@@ -60,7 +60,18 @@
       echo $res;
 
     ?>
+    
+<!--Если код js в форме не нравится, то можно обойтись без него-->
+    <?php
+      echo '<br>Function reuqest without JS:';
+      function m_link(string $name, string $link) {
+        $res = '<br><form method="post" action="'.$link.'" target="_blank"><button class="my">'.$name.'</button></form>';
+        return $res;
+      }
 
+      $res = m_link('Books','https://www.labirint.ru/books/');
+      echo $res;      
+    ?>      
   </div>
   </body>
 </html>
