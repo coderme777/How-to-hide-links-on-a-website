@@ -71,7 +71,13 @@
 
       $res = m_link('Books','https://www.labirint.ru/books/');
       echo $res;      
-    ?>      
+    ?>
+<!-- ВНИМАНИЕ! Существуют ссылки, по которым при перехоед выдается ошибка, это связанно с алгоритмом обработки старонних сервисов.
+В этом случае method="post" заменяем на method="get". Где было замечено подобное поведение:
+https://afisha.yandex.ru/ 
+https://kassa.rambler.ru/ 
+https://ekb.kassir.ru/
+-->    
   </div>
   </body>
 </html>
